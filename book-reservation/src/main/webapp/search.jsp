@@ -47,8 +47,8 @@
         <table>
             <thead>
                 <tr>
-                    <th>책ID</th>
                     <th>제목</th>
+                    <th>분류</th>
                     <th>저자</th>
                     <th>옮긴이</th>
                     <th>출판일</th>
@@ -63,8 +63,8 @@
                 for (Book book : books) {
             %>
                 <tr>
-                    <td><%= book.getBookId() %></td>
                     <td><%= book.getTitle() %></td>
+                    <td><%= book.getCatName() %></td>
                     <td><%= book.getAuthor() %></td>
                     <td><%= book.getTranslator() %></td>
                     <td><%= book.getPubDate() %></td>
